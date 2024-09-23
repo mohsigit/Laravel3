@@ -32,9 +32,9 @@ Route::middleware(['guest'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+//    Route::get('/dashboard', function () {
+//        return view('dashboard');
+//    })->name('dashboard');
 
     // Define role-specific routes
     Route::middleware(['role:admin'])->group(function () {
